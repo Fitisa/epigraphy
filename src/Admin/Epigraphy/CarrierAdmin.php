@@ -54,15 +54,7 @@ final class CarrierAdmin extends AbstractEntityAdmin
     protected function configureFormFields(FormMapper $formMapper): void
     {
         $formMapper
-            ->tab($this->getTabLabel('identification'))
-                ->with($this->getSectionLabel('identification'))
                     ->add('individualName', null, $this->createFormOptions('individualName'))
-                ->end()
-            ->end()
-            ->tab($this->getTabLabel('classification'))
-                ->with($this->getSectionLabel('classification'))
-                    // types are to be removed from the database
-                    // ->add('types', null, $this->createManyToManyFormOptions('types'))
                     ->add('categories', null, $this->createManyToManyFormOptions('categories'))
                     ->add(
                         'supercarrier',
@@ -74,19 +66,11 @@ final class CarrierAdmin extends AbstractEntityAdmin
                         CheckboxType::class,
                         $this->createFormOptions('isSuperCarrier', ['required' => false])
                     )
-                ->end()
-            ->end()
-            ->tab($this->getTabLabel('origin'))
-                ->with($this->getSectionLabel('origin'))
                     ->add('origin1', null, $this->createFormOptions('origin1'))
                     ->add('origin2', null, $this->createFormOptions('origin2'))
                     ->add('findCircumstances', null, $this->createFormOptions('findCircumstances'))
                     ->add('stratigraphicalDate', null, $this->createFormOptions('stratigraphicalDate'))
                     ->add('characteristics', null, $this->createFormOptions('characteristics'))
-                ->end()
-            ->end()
-            ->tab($this->getTabLabel('preservation'))
-                ->with($this->getSectionLabel('preservation'))
                     ->add('storagePlace', null, $this->createFormOptions('storagePlace'))
                     ->add('inventoryNumber', null, $this->createFormOptions('inventoryNumber'))
                     ->add(
@@ -94,8 +78,6 @@ final class CarrierAdmin extends AbstractEntityAdmin
                         CheckboxType::class,
                         $this->createFormOptions('isInSitu', ['required' => false])
                     )
-                ->end()
-            ->end()
         ;
     }
 }
