@@ -96,8 +96,8 @@ list:
       storagePlace: Место хранения
       inventoryNumber: Инвентарный номер
       isInSitu: In situ
-      supercarrier: Надноситель
-      isSuperCarrier: Является надносителем
+      supercarrier: Носитель верхнего уровня
+      isSuperCarrier: Является носителем верхнего уровня
   carrierType:
     fields:
       id: Внутренний идентификатор
@@ -289,14 +289,14 @@ form:
       zeroRowMaterialAspect:
         label: Материальный аспект
       zeroRowLinguisticAspect:
-        label: Лингвистический аспект
+        label: Текст
       zeroRowHistoricalAspect:
         label: Исторические данные
       zeroRowMedia:
         label: Изображения
     fields:
       number: Номер
-      conventionalDate: Условная дата
+      conventionalDate: Датировка
       carrier: Носитель
       comment: Комментарий
       isShownOnSite: Показывать надпись на сайте
@@ -330,8 +330,8 @@ form:
         descriptionReferences: Содержание (ссылки)
         dateInText: Дата в тексте
         dateInTextReferences: Дата в тексте (ссылки)
-        nonStratigraphicalDate: Внестратиграфическая дата
-        nonStratigraphicalDateReferences: Внестратиграфическая дата (ссылки)
+        nonStratigraphicalDate: Датировка по палеографии и языку
+        nonStratigraphicalDateReferences: Датировка по палеографии и языку (ссылки)
         historicalDate: «Историческая» дата
         historicalDateReferences: «Историческая» дата (ссылки)
         photos: Фотографии (файлы)
@@ -346,9 +346,9 @@ form:
       materialAspect:
         label: Материальный аспект
       linguisticAspect:
-        label: Лингвистический аспект
+        label: Текст и содержание
       historicalAspect:
-        label: Исторический аспект
+        label: Датировка
       media:
         label: Медиа
     section:
@@ -357,9 +357,9 @@ form:
       materialAspect:
         label: Материальный аспект
       linguisticAspect:
-        label: Лингвистический аспект
+        label: Текст и содержание
       historicalAspect:
-        label: Исторические данные
+        label: Датировка
       media:
         label: Изображения и файлы
     fields:
@@ -381,7 +381,7 @@ form:
       contentCategories: Подкатегория содержания
       description: Содержание
       dateInText: Дата в тексте
-      nonStratigraphicalDate: Внестратиграфическая дата
+      nonStratigraphicalDate: Датировка по палеографии и языку
       historicalDate: «Историческая» дата
       photos: Фото (файлы)
       drawings: Прориси (файлы)
